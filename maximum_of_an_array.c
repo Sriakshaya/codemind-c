@@ -1,8 +1,13 @@
 #include<stdio.h>
+int shhh(int n,int i);
 int main()
 {
     int n,i;
     scanf("%d",&n);
+    int x=shhh(n,i);
+}
+int shhh(int n,int i)
+{
     int a[n];
     for(i=0;i<n;i++)
     {
@@ -17,4 +22,5 @@ int main()
         }
     }
     printf("%d",max);
+    return 0;
 }

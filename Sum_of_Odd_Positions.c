@@ -1,8 +1,13 @@
 #include<stdio.h>
+int od(int n,int i,int sum);
 int main()
 {
     int n,i,sum=0;
     scanf("%d",&n);
+    int x=od(n,i,sum);
+}
+int od(int n,int i,int sum)
+{
     int a[n];
     for(i=0;i<n;i++)
     {
@@ -16,4 +21,5 @@ int main()
         }
     }
     printf("%d",sum);
+    return 0;
 }

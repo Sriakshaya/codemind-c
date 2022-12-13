@@ -1,8 +1,13 @@
 #include<stdio.h>
+void ev(int n,int i,int sum);
 int main()
 {
     int n,i,sum=0;
     scanf("%d",&n);
+    ev(n,i,sum);
+}
+void ev(int n,int i,int sum)
+{
     int a[n];
     for(i=0;i<n;i++)
     {

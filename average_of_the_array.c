@@ -1,9 +1,14 @@
 #include<stdio.h>
+void ar(int n,int i);
 int main()
 {
     int n,i;
-    float sum=0,avg;
     scanf("%d",&n);
+    ar(n,i);
+}
+void ar(int n,int i)
+{
+    float sum=0,avg;
     int a[n];
     for(i=0;i<n;i++)
     {

@@ -1,8 +1,13 @@
 #include<stdio.h>
+int lc(int a,int b,int m,int i);
 int main()
 {
     int a,b,m,i;
     scanf("%d%d",&a,&b);
+    int x=lc(a,b,m,i);
+}
+int lc(int a,int b,int m,int i)
+{
     if(a>b)
     {
         m=a;
@@ -19,4 +24,5 @@ int main()
             break;
         }
     }
+    return 0;
 }

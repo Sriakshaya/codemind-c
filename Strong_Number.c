@@ -2,26 +2,26 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,q,r,wt=1,s=0;
+    int n,d,i,fact=1,num,res=0;
     scanf("%d",&n);
-    q=n;
-    while(q!=0)
+    num=n;
+    while(num)
     {
-        r=q%10;
-        for(i=1;i<=r;i++)
+        fact=1;
+        d=num%10;
+        for(i=1;i<=d;i++)
         {
-            wt*=i;
+            fact=fact*i;
         }
-        s+=wt;
-        wt=1;
-        q/=10;
+        res+=fact;
+        num=num/10;
     }
-    if(s==n)
+    if(res==n)
     {
         printf("The number %d is a strong number",n);
     }
     else
     {
-        printf("The number %d is not a strong number",n);
+         printf("The number %d is not a strong number",n);
     }
 }

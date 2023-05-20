@@ -1,25 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,digit;
-    static int arr[10];
+    int n,d,a[100]={0};
     scanf("%d",&n);
-    while(n>0)
+    while(n)
     {
-        digit=n%10;
-        arr[digit]++;
-        n=n/10;
-    }
-    for(i=0;i<10;i++)
-    {
-        if(arr[i]>1)
+        d=n%10;
+        if(a[d]==1)
         {
-            printf("Not Unique Number");
             break;
         }
-    }
-    if(i==10)
-    {
+        else
+        {
+            a[d]=1;
+        }
+        n=n/10;
+      }
+      if(n)
+      {
+        printf("Not Unique Number");
+      }
+      else
+      {
         printf("Unique Number");
-    }
+      }
 }

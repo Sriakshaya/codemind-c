@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,q,r,s=0,p=1,diff;
+    int n,d,sum=0,mul=1,res;
     scanf("%d",&n);
-    q=n;
-    while(q!=0)
+    while(n)
     {
-        r=q%10;
-        p=p*r;
-        s=s+r;
-        q=q/10;
+        d=n%10;
+        sum+=d;
+        mul*=d;
+        n=n/10;
     }
-    diff=p-s;
-    printf("%d",diff);
+    res=mul-sum;
+    printf("%d",res);
+    return 0;
 }

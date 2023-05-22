@@ -1,14 +1,13 @@
-
 #include<stdio.h>
 int main()
 {
-    int x,y,i,GCD;
-    scanf("%d %d",&x,&y);
+    int x,i,y,gcd;
+    scanf("%d%d",&x,&y);
     for(i=1;i<=x&&i<=y;i++)
     {
         if(x%i==0&&y%i==0)
-        GCD=i;
+        gcd=i;
     }
-    printf("%d",GCD);
+    printf("%d",gcd);
     return 0;
 }

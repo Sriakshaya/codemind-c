@@ -1,24 +1,27 @@
- #include <stdio.h>
-  int main() {
-        int data, num1 = 0, num2 = 1, temp, flag = 0;
-        scanf("%d", &data);
-
-        if (data == num1 || data == num2) {
-                return 0;
+#include<stdio.h>
+int main()
+{
+    int a=0,b=1;
+    int n;
+    scanf("%d",&n);
+    int fib=0;
+    while(a<=n)
+    {
+        if(a==n)
+        {
+            fib=1;
+            break;
         }
-        while (num2 <= data) {
-                temp = num2;
-                num2 = num1 + num2;
-                num1 = temp;
-                if (num2 == data) {
-                        flag = 1;
-                        break;
-                }
-        }
-        if (flag) {
-                printf("True");
-        } else {
-                printf("False");
-        }
-        return 0;
-  }
+        int c=a+b;
+        a=b;
+        b=c;
+    }
+    if(fib==1)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
